@@ -1,0 +1,9 @@
+Khoa Bui
+SJSUID: 014745549
+Major: Computer Sciense
+Email: khoa.t.bui@sjsu.edu
+Status: Undergraduate
+I am not graduating senior
+I am not repeating the class
+My courses have been taken: CS-49J,CS-147,CS-146
+If we get the time during this semester I hope you can go over more about the command line, which I have not study before.
