@@ -1,4 +1,8 @@
-package Exercise1;
+/*
+Author: Khoa Bui
+Version: 0.1
+Program: Create the student class and print all the information include schedule of the student
+ */
 public class Student {
     private String FirstName;
     private String LastName;
@@ -6,7 +10,7 @@ public class Student {
     private float Gpa;
     private String Major;
     private String Department;
-
+    //Contructor student class
     public Student(String firstName, String lastName, int age, float gpa, String major, String department)
     {
         FirstName=firstName;
@@ -16,6 +20,7 @@ public class Student {
         Major=major;
         Department=department;
     }
+    //non-static inner class
     class Course
     {
         public void printSchedule()
@@ -23,6 +28,7 @@ public class Student {
             System.out.println("Schedule: \nCS151 Tue/Thur 6-7:15 \nEng101 Mon/Wed 10-11:45 \nHist10 Tue/Thur 1:30-2:45");
         }
     }
+    // The method to print all the information and printSchedule from the inner class
     void Print_Information() {
         Course schedule = new Course();
         System.out.println(FirstName);

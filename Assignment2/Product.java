@@ -1,5 +1,8 @@
-package Exercise4;
-
+/*
+Author: Khoa Bui
+Version: 0.1
+Description: Exercise 4,Product class. Define and implement an immutable class Product.
+*/
 public final class Product {
     final String ProductName;
     final String ProductDes;
@@ -25,7 +28,7 @@ public final class Product {
     public int getMaximumQuantity() {
         return MaximumQuantity;
     }
-
+    //override toString method
     @Override
     public String toString() {
         return "Product:"+ ProductName + ", description" + ProductDes +", price=" + Price + ", MaximumQuantity=" + MaximumQuantity +"\n";

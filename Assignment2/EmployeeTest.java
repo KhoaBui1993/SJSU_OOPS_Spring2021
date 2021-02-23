@@ -1,4 +1,8 @@
-package Exercise3;
+/*
+Author: Khoa Bui
+Version: 0.1
+Description: Exercise 3, EmployeeTest class. this file create to test the employee class and Person class
+*/
 
 public class EmployeeTest {
     public static void main(String[] args) {

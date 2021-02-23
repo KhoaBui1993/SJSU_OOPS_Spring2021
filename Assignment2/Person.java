@@ -1,5 +1,9 @@
-package Exercise3;
-
+/*
+Author: Khoa Bui
+Version: 0.1
+Description: Exercise 3, Person class. this file create the person class with all attribute and make the Employee class
+inherited all attribute and method from this class.
+*/
 public class Person {
     private String FirstName;
     private String LastName;
@@ -63,6 +67,7 @@ public class Person {
     {
         Weight=weight;
     }
+    // the introduce method for the inherited class override
     public void introduce()
     {
     }

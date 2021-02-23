@@ -1,5 +1,8 @@
-package Exercise5;
-
+/*
+Author: Khoa Bui
+Version: 0.1
+Description: Exercise 5, Animal class. this file create the Animal class with all attribute and method.
+*/
 public class AnimalTest {
     public static void main(String[] args) {
         Dog dog=new Dog("Dog","Lulu",5,"Male","Home",10);

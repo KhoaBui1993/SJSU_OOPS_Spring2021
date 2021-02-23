@@ -1,6 +1,8 @@
-package Exercise5;
-
-
+/*
+Author: Khoa Bui
+Version: 0.1
+Description: Exercise 5, AnimalTest class. this file create to run all the method from the other class.
+*/
 public class Animal {
     private String Type;
     private String Name;
@@ -48,6 +50,7 @@ public class Animal {
     public void setSpeed(int speed){
         Speed=speed;
     }
+    // method move make for the inherited class use it
     public void Move()
     {
         System.out.println("Move");
@@ -65,6 +68,7 @@ public class Animal {
         System.out.println("zzzzz!");
     }
     @Override
+    //override toString method to print out all the attribute
     public String toString() {
         return "type=" + Type +
                 ", name=" + Name +
