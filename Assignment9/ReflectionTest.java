@@ -7,6 +7,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 
 public class ReflectionTest {
@@ -14,18 +15,32 @@ public class ReflectionTest {
         Method[] publicMethod_person = Class.forName("Person").getDeclaredMethods();
     //prints declare methods
         System.out.println("Display all the declare method of person class:");
-        for (Method s:publicMethod_person)
-            System.out.println(" +"+s.getName());
+        for (Method s:publicMethod_person) {
+            Class[] parameters = s.getParameterTypes();
+            if (parameters.length == 0)
+                System.out.println(s + " has 0 parameters");
+            else {
+                System.out.println(s + " has " + parameters.length + " parameter(s) of the following types:");
+                System.out.println(" +" + s.toString() + " has parameter type: " + Arrays.toString(s.getParameterTypes()));
+            }
+        }
     //prints all methods
         Method[] publicMethod_address = Class.forName("Address").getMethods();
         System.out.println("Display all the method of Address class:");
-        for (Method s:publicMethod_address)
-            System.out.println(" +"+s.getName());
+        for (Method s:publicMethod_address){
+            Class[] parameters = s.getParameterTypes();
+        if (parameters.length == 0)
+            System.out.println(s + " has 0 parameters");
+        else {
+            System.out.println(s + " has " + parameters.length + " parameter(s) of the following types:");
+            System.out.println(" +" + s.toString() + " has parameter type: " + Arrays.toString(s.getParameterTypes()));
+        }
+    }
     //prints all fields declared
         Field[] Field_person = Class.forName("Address").getDeclaredFields();
         System.out.println("Display all the Declare field of Address class:");
         for (Field s:Field_person)
-            System.out.println(" +"+s.getName());
+            System.out.println(" +"+s.toString());
     //Create 3 new instances of class Person
         try {
             Constructor<Address> addressConstructor= Address.class.getConstructor(int.class,String.class,String.class,String.class,String.class);
